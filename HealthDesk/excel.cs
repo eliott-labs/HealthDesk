@@ -10,7 +10,7 @@ namespace HealthDesk
 {
     class Excel
     {
-        string path = "Test";
+        string path = "";
         _Application excel = new _Excel.Application();
         Workbook wb;
         Worksheet ws;
@@ -35,7 +35,7 @@ namespace HealthDesk
         {
             i++;
             j++;
-            ws.Cells[1, j].Value2 = s;
+            ws.Cells[i, j].Value2 = s;
         }
 
         public void Save()
@@ -53,6 +53,16 @@ namespace HealthDesk
         public Excel()
         {
 
+        }
+
+        public string ReadCell(int i, int j)
+        {
+            i++;
+            j++;
+            //if (ws.Cells[i, j].Value2 != null)
+            return ws.Cells[i, j].Text;
+            //else
+            //    return "";
         }
     }
 

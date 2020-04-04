@@ -33,6 +33,7 @@ namespace HealthDesk
 
         private void metroButton2_Click(object sender, EventArgs e)
         {
+
             string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + metroTextBox4.Text + ".xlsx";
             Excel ex = new Excel();
             ex.CreateNewFile();
@@ -48,6 +49,8 @@ namespace HealthDesk
             excel.WriteTocell(1, 5, metroComboBox1.Text);
             excel.WriteTocell(1, 6, metroComboBox2.Text);
             excel.Save();
+            excel.Close();
+            this.Hide();
 
         }
 

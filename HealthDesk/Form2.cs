@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Microsoft.Office.Interop.Excel;
+using x = Microsoft.Office.Interop.Excel;
+using OfficeOpenXml.Core.ExcelPackage;
+
+using _Excel = Microsoft.Office.Interop.Excel;
 
 
 namespace HealthDesk
@@ -63,8 +68,29 @@ namespace HealthDesk
         private void metroButton2_Click(object sender, EventArgs e)
         {
             string patientid2 = metroTextBox1.Text;
-            string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\Patients\" + patientid2 + ".txt";
 
+            //string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + patientid2 + ".xlsx";
+            //Excel excel = new Excel(path, 1);
+
+            //string First = excel.ReadCell(0, 1);
+            //string Last = excel.ReadCell(1, 2);
+            //string DOB =  excel.ReadCell(1, 3);
+            //string symp = excel.ReadCell(1, 4);
+            //string status = excel.ReadCell(1, 5);
+            //MessageBox.Show(First);
+            //excel.Close();
+            //MessageBox.Show(First);
+
+            //string Firt;
+            //First = excel.ReadCell(1, 1);
+            //Last = excel.ReadCell(1, 2);
+            //DOB = excel.ReadCell(1, 3);
+            //symp = excel.ReadCell(1, 4);
+            //status = excel.ReadCell(1, 5);
+
+            Form4 f4 = new Form4(patientid2);
+            f4.Show();
+            this.Hide();
         }
     }
 }
