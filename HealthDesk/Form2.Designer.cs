@@ -42,7 +42,7 @@
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroScrollBar1 = new MetroFramework.Controls.MetroScrollBar();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +62,7 @@
             this.metroTile1.Size = new System.Drawing.Size(109, 51);
             this.metroTile1.TabIndex = 1;
             this.metroTile1.Text = "Add Patient";
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // metroTile2
             // 
@@ -70,6 +71,7 @@
             this.metroTile2.Size = new System.Drawing.Size(109, 23);
             this.metroTile2.TabIndex = 2;
             this.metroTile2.Text = "<-- Return";
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroRadioButton1
             // 
@@ -159,30 +161,34 @@
             this.metroButton2.Size = new System.Drawing.Size(62, 23);
             this.metroButton2.TabIndex = 11;
             this.metroButton2.Text = "Search";
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // metroTextBox2
             // 
             this.metroTextBox2.Location = new System.Drawing.Point(212, 64);
             this.metroTextBox2.Multiline = true;
             this.metroTextBox2.Name = "metroTextBox2";
+            this.metroTextBox2.ReadOnly = true;
+            this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.metroTextBox2.Size = new System.Drawing.Size(411, 298);
             this.metroTextBox2.TabIndex = 12;
             this.metroTextBox2.Click += new System.EventHandler(this.metroTextBox2_Click);
             // 
-            // metroScrollBar1
+            // metroTile3
             // 
-            this.metroScrollBar1.Location = new System.Drawing.Point(196, 64);
-            this.metroScrollBar1.Name = "metroScrollBar1";
-            this.metroScrollBar1.Orientation = MetroFramework.Controls.MetroScrollOrientation.Vertical;
-            this.metroScrollBar1.Size = new System.Drawing.Size(10, 200);
-            this.metroScrollBar1.TabIndex = 13;
+            this.metroTile3.Location = new System.Drawing.Point(212, 8);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(109, 23);
+            this.metroTile3.TabIndex = 13;
+            this.metroTile3.Text = "Refresh";
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(646, 385);
-            this.Controls.Add(this.metroScrollBar1);
+            this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTextBox2);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroTextBox1);
@@ -220,6 +226,6 @@
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroTextBox metroTextBox2;
-        private MetroFramework.Controls.MetroScrollBar metroScrollBar1;
+        private MetroFramework.Controls.MetroTile metroTile3;
     }
 }

@@ -22,8 +22,10 @@ namespace HealthDesk
         private void metroTile1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //this.Close();
             Form2 f2 = new Form2();
             f2.Show();
+            
 
         }
     }
