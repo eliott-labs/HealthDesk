@@ -26,9 +26,9 @@ namespace HealthDesk
 
             InitializeComponent();
             this.MaximizeBox = false;
-
-            string filetext = File.ReadAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\PatientList.txt");
-            metroTextBox2.Text = filetext;
+            //For Later
+            //string filetext = File.ReadAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\PatientList.txt");
+            //metroTextBox2.Text = filetext;
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -69,28 +69,15 @@ namespace HealthDesk
         {
             string patientid2 = metroTextBox1.Text;
 
-            //string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + patientid2 + ".xlsx";
-            //Excel excel = new Excel(path, 1);
-
-            //string First = excel.ReadCell(0, 1);
-            //string Last = excel.ReadCell(1, 2);
-            //string DOB =  excel.ReadCell(1, 3);
-            //string symp = excel.ReadCell(1, 4);
-            //string status = excel.ReadCell(1, 5);
-            //MessageBox.Show(First);
-            //excel.Close();
-            //MessageBox.Show(First);
-
-            //string Firt;
-            //First = excel.ReadCell(1, 1);
-            //Last = excel.ReadCell(1, 2);
-            //DOB = excel.ReadCell(1, 3);
-            //symp = excel.ReadCell(1, 4);
-            //status = excel.ReadCell(1, 5);
 
             Form4 f4 = new Form4(patientid2);
             f4.Show();
             this.Hide();
+        }
+
+        private void metroTextBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

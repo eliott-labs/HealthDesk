@@ -42,12 +42,12 @@ namespace HealthDesk
 
             
             Excel excel = new Excel(path, 1);
-            excel.WriteTocell(1, 1, metroTextBox1.Text);
-            excel.WriteTocell(1, 2, metroTextBox2.Text);
-            excel.WriteTocell(1, 3, metroTextBox3.Text);
-            excel.WriteTocell(1, 4, metroTextBox4.Text);
-            excel.WriteTocell(1, 5, metroComboBox1.Text);
-            excel.WriteTocell(1, 6, metroComboBox2.Text);
+            excel.WriteTocell(0, 1, metroTextBox1.Text);
+            excel.WriteTocell(0, 2, metroTextBox2.Text);
+            excel.WriteTocell(0, 3, metroTextBox3.Text);
+            excel.WriteTocell(0, 4, metroTextBox4.Text);
+            excel.WriteTocell(0, 5, metroComboBox1.Text);
+            excel.WriteTocell(0, 6, metroComboBox2.Text);
             excel.Save();
             excel.Close();
             this.Hide();

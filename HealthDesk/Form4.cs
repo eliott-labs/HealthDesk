@@ -16,13 +16,15 @@ namespace HealthDesk
         {
             string patientl = patientid2p;
             string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + patientl + ".xlsx";
-            Excel excel = new Excel(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\123456789.xlsx", 1);
+            Excel excel = new Excel(path, 1);
 
             string First = excel.ReadCell(0, 1);
             string Last = excel.ReadCell(0, 2);
             string DOB = excel.ReadCell(0, 3);
             string symp = excel.ReadCell(0, 5);
             string status = excel.ReadCell(0, 6);
+
+            excel.Close();
             InitializeComponent();
             
             metroTextBox1.Text = First;
@@ -33,6 +35,16 @@ namespace HealthDesk
             metroComboBox2.Text = status;
         }
 
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
     }
 }

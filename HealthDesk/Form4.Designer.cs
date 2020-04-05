@@ -171,25 +171,27 @@
             // 
             // metroTile1
             // 
-            this.metroTile1.Location = new System.Drawing.Point(46, 251);
+            this.metroTile1.Location = new System.Drawing.Point(23, 189);
             this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(92, 29);
+            this.metroTile1.Size = new System.Drawing.Size(115, 91);
             this.metroTile1.TabIndex = 30;
             this.metroTile1.Text = "<-- Return";
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // metroTile2
             // 
             this.metroTile2.Location = new System.Drawing.Point(23, 63);
             this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(115, 29);
+            this.metroTile2.Size = new System.Drawing.Size(115, 43);
             this.metroTile2.TabIndex = 31;
             this.metroTile2.Text = "Equipement";
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile3
             // 
             this.metroTile3.Location = new System.Drawing.Point(23, 112);
             this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(115, 29);
+            this.metroTile3.Size = new System.Drawing.Size(115, 62);
             this.metroTile3.TabIndex = 32;
             this.metroTile3.Text = "Personal Details";
             // 
