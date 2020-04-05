@@ -48,8 +48,7 @@ namespace HealthDesk
 
         private void metroTile3_Click(object sender, EventArgs e)
         {
-            string filetext = File.ReadAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\PatientList.txt");
-            metroTextBox2.Text = filetext;
+        
         }
 
         private void metroTile1_Click(object sender, EventArgs e)

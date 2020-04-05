@@ -37,6 +37,8 @@ namespace HealthDesk
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
+            Form5 f5 = new Form5();
+            f5.Show();
 
         }
 
@@ -45,6 +47,21 @@ namespace HealthDesk
             this.Hide();
             Form2 f2 = new Form2();
             f2.Show();
+        }
+
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + metroTextBox4.Text + ".xlsx";
+            Excel excel = new Excel(path, 1);
+            excel.WriteTocell(0, 1, metroTextBox1.Text);
+            excel.WriteTocell(0, 2, metroTextBox2.Text);
+            excel.WriteTocell(0, 3, metroTextBox3.Text);
+            excel.WriteTocell(0, 4, metroTextBox4.Text);
+            excel.WriteTocell(0, 5, metroComboBox1.Text);
+            excel.WriteTocell(0, 6, metroComboBox2.Text);
+            excel.WriteTocell(0, 7, metroTextBox5.Text);
+            excel.Save();
+            excel.Close();
         }
     }
 }

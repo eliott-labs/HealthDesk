@@ -48,6 +48,7 @@ namespace HealthDesk
             excel.WriteTocell(0, 4, metroTextBox4.Text);
             excel.WriteTocell(0, 5, metroComboBox1.Text);
             excel.WriteTocell(0, 6, metroComboBox2.Text);
+            excel.WriteTocell(0, 7, metroTextBox5.Text);
             excel.Save();
             excel.Close();
             this.Hide();

@@ -1,6 +1,6 @@
 ﻿namespace HealthDesk
 {
-    partial class Form1
+    partial class Form6
     {
         /// <summary>
         /// Required designer variable.
@@ -28,60 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // metroTile1
             // 
-            this.metroTile1.Location = new System.Drawing.Point(23, 63);
+            this.metroTile1.Location = new System.Drawing.Point(24, 98);
             this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(97, 86);
+            this.metroTile1.Size = new System.Drawing.Size(115, 163);
             this.metroTile1.TabIndex = 0;
-            this.metroTile1.Text = "PATIENTS";
+            this.metroTile1.Text = "Beds";
             this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // metroTile2
             // 
-            this.metroTile2.Location = new System.Drawing.Point(145, 63);
+            this.metroTile2.Location = new System.Drawing.Point(162, 98);
             this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(97, 86);
+            this.metroTile2.Size = new System.Drawing.Size(115, 84);
             this.metroTile2.TabIndex = 1;
-            this.metroTile2.Text = "EQUIPMENT";
-            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
+            this.metroTile2.Text = "Ventilators";
             // 
             // metroTile3
             // 
-            this.metroTile3.Location = new System.Drawing.Point(145, 168);
+            this.metroTile3.Location = new System.Drawing.Point(162, 198);
             this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(97, 86);
+            this.metroTile3.Size = new System.Drawing.Size(115, 63);
             this.metroTile3.TabIndex = 2;
-            this.metroTile3.Text = "SETTINGS";
+            this.metroTile3.Text = "<-- Return";
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
-            // metroTile4
-            // 
-            this.metroTile4.Location = new System.Drawing.Point(23, 168);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(97, 86);
-            this.metroTile4.TabIndex = 3;
-            this.metroTile4.Text = "Close";
-            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
-            // 
-            // Form1
+            // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 268);
-            this.Controls.Add(this.metroTile4);
+            this.ClientSize = new System.Drawing.Size(295, 279);
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "Health Desk - Menu";
+            this.Name = "Form6";
+            this.Text = "Equipment Managment";
             this.ResumeLayout(false);
 
         }
@@ -91,7 +78,5 @@
         private MetroFramework.Controls.MetroTile metroTile1;
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile3;
-        private MetroFramework.Controls.MetroTile metroTile4;
     }
 }
-

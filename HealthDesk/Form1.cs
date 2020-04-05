@@ -28,5 +28,17 @@ namespace HealthDesk
             
 
         }
+
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            Form6 f6 = new Form6();
+            f6.Show();
+            this.Hide();
+        }
     }
 }

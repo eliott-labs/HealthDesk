@@ -45,6 +45,9 @@
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroTile4 = new MetroFramework.Controls.MetroTile();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.metroTextBox5 = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -184,7 +187,7 @@
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(115, 43);
             this.metroTile2.TabIndex = 31;
-            this.metroTile2.Text = "Equipement";
+            this.metroTile2.Text = "Equipment";
             this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile3
@@ -203,11 +206,40 @@
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
+            // metroTile4
+            // 
+            this.metroTile4.Location = new System.Drawing.Point(419, 38);
+            this.metroTile4.Name = "metroTile4";
+            this.metroTile4.Size = new System.Drawing.Size(115, 19);
+            this.metroTile4.TabIndex = 34;
+            this.metroTile4.Text = "Update";
+            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.Location = new System.Drawing.Point(153, 38);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(53, 19);
+            this.metroLabel7.TabIndex = 35;
+            this.metroLabel7.Text = "Doctor:";
+            // 
+            // metroTextBox5
+            // 
+            this.metroTextBox5.Location = new System.Drawing.Point(213, 34);
+            this.metroTextBox5.Name = "metroTextBox5";
+            this.metroTextBox5.ReadOnly = true;
+            this.metroTextBox5.Size = new System.Drawing.Size(151, 23);
+            this.metroTextBox5.TabIndex = 36;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 297);
+            this.Controls.Add(this.metroTextBox5);
+            this.Controls.Add(this.metroLabel7);
+            this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
@@ -253,5 +285,8 @@
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private MetroFramework.Controls.MetroTile metroTile4;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroTextBox metroTextBox5;
     }
 }

@@ -45,6 +45,8 @@
             this.metroTextBox4 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.metroTextBox5 = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -196,11 +198,30 @@
             this.metroComboBox2.Size = new System.Drawing.Size(96, 29);
             this.metroComboBox2.TabIndex = 16;
             // 
+            // metroTextBox5
+            // 
+            this.metroTextBox5.Location = new System.Drawing.Point(218, 34);
+            this.metroTextBox5.Name = "metroTextBox5";
+            this.metroTextBox5.ReadOnly = true;
+            this.metroTextBox5.Size = new System.Drawing.Size(151, 23);
+            this.metroTextBox5.TabIndex = 38;
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.Location = new System.Drawing.Point(158, 38);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(53, 19);
+            this.metroLabel7.TabIndex = 37;
+            this.metroLabel7.Text = "Doctor:";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 297);
+            this.Controls.Add(this.metroTextBox5);
+            this.Controls.Add(this.metroLabel7);
             this.Controls.Add(this.metroComboBox2);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.metroTextBox4);
@@ -245,5 +266,7 @@
         private MetroFramework.Controls.MetroTextBox metroTextBox4;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroComboBox metroComboBox2;
+        private MetroFramework.Controls.MetroTextBox metroTextBox5;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
     }
 }
