@@ -20,6 +20,7 @@ namespace HealthDesk
         public Form3()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
         }
 
 

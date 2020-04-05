@@ -57,9 +57,9 @@
             this.metroComboBox2.FormattingEnabled = true;
             this.metroComboBox2.ItemHeight = 23;
             this.metroComboBox2.Items.AddRange(new object[] {
-            "Sent Home",
+            "Discharged",
             "Hospitalized",
-            "Recovered"});
+            "Deceased"});
             this.metroComboBox2.Location = new System.Drawing.Point(438, 184);
             this.metroComboBox2.Name = "metroComboBox2";
             this.metroComboBox2.Size = new System.Drawing.Size(96, 29);

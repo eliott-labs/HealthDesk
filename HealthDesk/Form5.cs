@@ -15,6 +15,7 @@ namespace HealthDesk
     {
         public Form5(string patientID)
         {
+            this.MaximizeBox = false;
             InitializeComponent();
             metroLabel4.Text = patientID;
             Updateequip();

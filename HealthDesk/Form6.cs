@@ -14,6 +14,7 @@ namespace HealthDesk
     {
         public Form6()
         {
+            this.MaximizeBox = false;
             InitializeComponent();
         }
 

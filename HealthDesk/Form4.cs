@@ -14,6 +14,7 @@ namespace HealthDesk
     {
         public Form4(string patientid2p)
         {
+            this.MaximizeBox = false;
             string patientl = patientid2p;
             string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + patientl + ".xlsx";
             Excel excel = new Excel(path, 1);

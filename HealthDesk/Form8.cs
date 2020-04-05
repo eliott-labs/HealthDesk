@@ -15,6 +15,7 @@ namespace HealthDesk
     {
         public Form8()
         {
+            this.MaximizeBox = false;
             InitializeComponent();
 
             Updateit();
