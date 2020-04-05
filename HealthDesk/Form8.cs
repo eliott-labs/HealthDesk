@@ -23,7 +23,7 @@ namespace HealthDesk
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-
+            Updateit();
         }
 
         public void Updateit()
@@ -62,6 +62,8 @@ namespace HealthDesk
             int num1 = listd.Count;
             int num2 = listc.Count;
             int num3 = list3.Count();
+
+            File.Delete(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableBeds.txt");
 
             foreach (string value in list3)
             {

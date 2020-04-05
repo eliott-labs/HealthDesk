@@ -23,6 +23,7 @@ namespace HealthDesk
             string DOB = excel.ReadCell(0, 3);
             string symp = excel.ReadCell(0, 5);
             string status = excel.ReadCell(0, 6);
+            string doctor = excel.ReadCell(0, 7);
 
             excel.Close();
             InitializeComponent();
@@ -33,11 +34,12 @@ namespace HealthDesk
             metroTextBox4.Text = patientid2p;
             metroComboBox1.Text = symp;
             metroComboBox2.Text = status;
+            metroTextBox5.Text = doctor;
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
+            Form5 f5 = new Form5(metroTextBox4.Text);
             f5.Show();
 
         }

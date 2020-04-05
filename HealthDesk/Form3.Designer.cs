@@ -202,7 +202,6 @@
             // 
             this.metroTextBox5.Location = new System.Drawing.Point(218, 34);
             this.metroTextBox5.Name = "metroTextBox5";
-            this.metroTextBox5.ReadOnly = true;
             this.metroTextBox5.Size = new System.Drawing.Size(151, 23);
             this.metroTextBox5.TabIndex = 38;
             // 

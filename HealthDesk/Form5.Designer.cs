@@ -37,6 +37,7 @@
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -70,7 +71,6 @@
             // 
             this.metroTextBox1.Location = new System.Drawing.Point(77, 64);
             this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.ReadOnly = true;
             this.metroTextBox1.Size = new System.Drawing.Size(162, 23);
             this.metroTextBox1.TabIndex = 3;
             // 
@@ -78,7 +78,6 @@
             // 
             this.metroTextBox2.Location = new System.Drawing.Point(108, 95);
             this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.ReadOnly = true;
             this.metroTextBox2.Size = new System.Drawing.Size(131, 23);
             this.metroTextBox2.TabIndex = 4;
             // 
@@ -86,7 +85,6 @@
             // 
             this.metroTextBox3.Location = new System.Drawing.Point(108, 131);
             this.metroTextBox3.Name = "metroTextBox3";
-            this.metroTextBox3.ReadOnly = true;
             this.metroTextBox3.Size = new System.Drawing.Size(131, 23);
             this.metroTextBox3.TabIndex = 5;
             // 
@@ -114,12 +112,23 @@
             this.metroTile3.Size = new System.Drawing.Size(122, 38);
             this.metroTile3.TabIndex = 8;
             this.metroTile3.Text = "Update";
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(141, 28);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(0, 0);
+            this.metroLabel4.TabIndex = 9;
+            this.metroLabel4.Visible = false;
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 179);
+            this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
@@ -147,5 +156,6 @@
         private MetroFramework.Controls.MetroTile metroTile1;
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile3;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
     }
 }
