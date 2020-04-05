@@ -84,6 +84,8 @@ namespace HealthDesk
                         liste.Add(line3);
                     }
                 }
+                System.IO.File.AppendAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedVents.txt", Environment.NewLine + metroTextBox2.Text + Environment.NewLine);
+
 
                 Updateequip();
             }

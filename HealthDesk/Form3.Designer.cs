@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -237,6 +238,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
             this.Text = "Add Patient";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
