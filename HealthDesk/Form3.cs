@@ -64,7 +64,7 @@ namespace HealthDesk
             }
             else
             {
-                string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + metroTextBox4.Text + ".xlsx";
+                string path = @"C:\Windows\Temp\Patients\" + metroTextBox4.Text + ".xlsx";
                 Excel ex = new Excel();
                 ex.CreateNewFile();
                 ex.SaveAs(path);
