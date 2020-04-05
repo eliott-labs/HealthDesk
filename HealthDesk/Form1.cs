@@ -18,6 +18,21 @@ namespace HealthDesk
         {
             InitializeComponent();
             this.MaximizeBox = false;
+            if (!Directory.Exists(@"C:\Windows\Temp\Equipment"))
+            {
+                Directory.CreateDirectory(@"C:\Windows\Temp\Equipment");
+                File.Create(@"C:\Windows\Temp\Equipment\UsedBeds.txt");
+                File.Create(@"C:\Windows\Temp\Equipment\Bed#.txt");
+                File.Create(@"C:\Windows\Temp\Equipment\Vent#.txt");
+                File.Create(@"C:\Windows\Temp\Equipment\UsedVents.txt");
+
+            }
+            if (!Directory.Exists(@"C:\Windows\Temp\Patient"))
+            {
+                Directory.CreateDirectory(@"C:\Windows\Temp\Patient");
+                File.Create(@"C:\Windows\Temp\Patient\Start.xlsx");
+
+            }
         }
 
         private void metroTile1_Click(object sender, EventArgs e)

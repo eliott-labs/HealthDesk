@@ -32,7 +32,7 @@ namespace HealthDesk
             var listc = new List<string>();
 
 
-            using (var file = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\Bed#.txt")) //All bed#
+            using (var file = new StreamReader(@"C:\Windows\Temp\Equipment\Bed#.txt")) //All bed#
             {
                 var line = string.Empty;
 
@@ -44,7 +44,7 @@ namespace HealthDesk
             }
 
             var listd = new List<string>();
-            using (var file2 = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedBeds.txt"))
+            using (var file2 = new StreamReader(@"C:\Windows\Temp\Equipment\UsedBeds.txt"))
 
             {
                 var line2 = string.Empty;

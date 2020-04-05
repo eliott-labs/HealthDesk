@@ -31,7 +31,7 @@ namespace HealthDesk
             var listc = new List<string>();
 
 
-            using (var file = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\Vent#.txt")) //All vent#
+            using (var file = new StreamReader(@"C:\Windows\Temp\Equipment\Vent#.txt")) //All vent#
             {
                 var line = string.Empty;
 
@@ -43,7 +43,7 @@ namespace HealthDesk
             }
 
             var listd = new List<string>();
-            using (var file2 = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedVents.txt"))
+            using (var file2 = new StreamReader(@"C:\Windows\Temp\Equipment\UsedVents.txt"))
 
             {
                 var line2 = string.Empty;
@@ -63,14 +63,14 @@ namespace HealthDesk
             int num2 = listc.Count;
             int num3 = list3.Count();
 
-            File.Delete(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableVents.txt");
+            File.Delete(@"C:\Windows\Temp\Equipment\AvailableVents.txt");
 
             foreach (string value in list3)
             {
-                System.IO.File.AppendAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableVents.txt", value + Environment.NewLine);
+                System.IO.File.AppendAllText(@"C:\Windows\Temp\Equipment\AvailableVents.txt", value + Environment.NewLine);
                 
             }
-            string filetext = File.ReadAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableVents.txt");
+            string filetext = File.ReadAllText(@"C:\Windows\Temp\Equipment\AvailableVents.txt");
             metroTextBox1.Text = filetext;
             metroLabel4.Text = Convert.ToString(num1);
             metroLabel6.Text = Convert.ToString(num3);

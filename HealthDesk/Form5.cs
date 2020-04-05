@@ -50,7 +50,7 @@ namespace HealthDesk
             }
             else
             {
-                string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + metroLabel4.Text + ".xlsx";
+                string path = @"C:\Windows\Temp\Patients\" + metroLabel4.Text + ".xlsx";
                 Excel excel = new Excel(path, 1);
                 excel.WriteTocell(0, 8, metroTextBox1.Text);
                 excel.WriteTocell(0, 9, metroTextBox2.Text);
@@ -60,7 +60,7 @@ namespace HealthDesk
 
                 //BEDS
                 var listd = new List<string>();
-                using (var file2 = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedBeds.txt"))
+                using (var file2 = new StreamReader(@"C:\Windows\Temp\Equipment\UsedBeds.txt"))
 
                 {
                     var line2 = string.Empty;

@@ -16,7 +16,7 @@ namespace HealthDesk
         {
             this.MaximizeBox = false;
             string patientl = patientid2p;
-            string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + patientl + ".xlsx";
+            string path = @"C:\Windows\Temp\Patients\" + patientl + ".xlsx";
             Excel excel = new Excel(path, 1);
 
             string First = excel.ReadCell(0, 1);
@@ -84,7 +84,7 @@ namespace HealthDesk
             }
             else
             {
-                string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + metroTextBox4.Text + ".xlsx";
+                string path = @"C:\Windows\Temp\Patients\" + metroTextBox4.Text + ".xlsx";
                 Excel excel = new Excel(path, 1);
                 excel.WriteTocell(0, 1, metroTextBox1.Text);
                 excel.WriteTocell(0, 2, metroTextBox2.Text);

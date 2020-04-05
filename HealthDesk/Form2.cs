@@ -68,7 +68,7 @@ namespace HealthDesk
         {
             string patientid2 = metroTextBox1.Text;
 
-            if (File.Exists(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + patientid2 + ".xlsx"))
+            if (File.Exists(@"C:\Windows\Temp\Patients\" + patientid2 + ".xlsx"))
             {
                 Form4 f4 = new Form4(patientid2);
                 f4.Show();
