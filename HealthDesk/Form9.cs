@@ -11,9 +11,9 @@ using System.IO;
 
 namespace HealthDesk
 {
-    public partial class Form7 : MetroFramework.Forms.MetroForm
+    public partial class Form9 : MetroFramework.Forms.MetroForm
     {
-        public Form7()
+        public Form9()
         {
             InitializeComponent();
 
@@ -23,7 +23,7 @@ namespace HealthDesk
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-
+            Updateit();
         }
 
         public void Updateit()
@@ -31,7 +31,7 @@ namespace HealthDesk
             var listc = new List<string>();
 
 
-            using (var file = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\Bed#.txt")) //All bed#
+            using (var file = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\Vent#.txt")) //All vent#
             {
                 var line = string.Empty;
 
@@ -43,7 +43,7 @@ namespace HealthDesk
             }
 
             var listd = new List<string>();
-            using (var file2 = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedBeds.txt"))
+            using (var file2 = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedVents.txt"))
 
             {
                 var line2 = string.Empty;
@@ -63,12 +63,14 @@ namespace HealthDesk
             int num2 = listc.Count;
             int num3 = list3.Count();
 
+            File.Delete(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableVents.txt");
+
             foreach (string value in list3)
             {
-                System.IO.File.AppendAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableBeds.txt", value + Environment.NewLine);
+                System.IO.File.AppendAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableVents.txt", value + Environment.NewLine);
                 
             }
-            string filetext = File.ReadAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableBeds.txt");
+            string filetext = File.ReadAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableVents.txt");
             metroTextBox1.Text = filetext;
             metroLabel4.Text = Convert.ToString(num1);
             metroLabel6.Text = Convert.ToString(num3);

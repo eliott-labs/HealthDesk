@@ -104,6 +104,7 @@
             this.metroTile2.Size = new System.Drawing.Size(122, 38);
             this.metroTile2.TabIndex = 7;
             this.metroTile2.Text = "Change Ventilator";
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile3
             // 

@@ -68,10 +68,19 @@ namespace HealthDesk
         {
             string patientid2 = metroTextBox1.Text;
 
+            if (File.Exists(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + patientid2 + ".xlsx"))
+            {
+                Form4 f4 = new Form4(patientid2);
+                f4.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(patientid2 + " cannot be found!");
+            }
+                
 
-            Form4 f4 = new Form4(patientid2);
-            f4.Show();
-            this.Hide();
+            
         }
 
         private void metroTextBox1_Click(object sender, EventArgs e)

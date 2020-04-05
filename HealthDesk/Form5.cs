@@ -35,37 +35,57 @@ namespace HealthDesk
 
         private void metroTile3_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + metroLabel4.Text + ".xlsx";
-            Excel excel = new Excel(path, 1);
-            excel.WriteTocell(0, 8, metroTextBox1.Text);
-            excel.WriteTocell(0, 9, metroTextBox2.Text);
-            excel.WriteTocell(0, 10, metroTextBox3.Text);
-            excel.Save();
-            excel.Close();
-
-            var listd = new List<string>();
-            using (var file2 = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedBeds.txt"))
-
+            if (metroTextBox1.Text.Length < 1)
             {
-                var line2 = string.Empty;
-
-                while ((line2 = file2.ReadLine()) != null)
-                {
-                    listd.Add(line2);
-                }
+                MessageBox.Show("Make sure everything is filled in");
             }
+            if (metroTextBox2.Text.Length < 1)
+            {
+                MessageBox.Show("Make sure everything is filled in");
+            }
+            if (metroTextBox3.Text.Length < 1)
+            {
+                MessageBox.Show("Make sure everything is filled in");
+            }
+            else
+            {
+                string path = @"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Patients\" + metroLabel4.Text + ".xlsx";
+                Excel excel = new Excel(path, 1);
+                excel.WriteTocell(0, 8, metroTextBox1.Text);
+                excel.WriteTocell(0, 9, metroTextBox2.Text);
+                excel.WriteTocell(0, 10, metroTextBox3.Text);
+                excel.Save();
+                excel.Close();
 
-            //File.Delete(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedBeds.txt");
+                //BEDS
+                var listd = new List<string>();
+                using (var file2 = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedBeds.txt"))
 
-            //foreach (string value in listd)
-            //{
-            //    System.IO.File.AppendAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\AvailableBeds.txt", value + Environment.NewLine);
+                {
+                    var line2 = string.Empty;
 
-            //}
+                    while ((line2 = file2.ReadLine()) != null)
+                    {
+                        listd.Add(line2);
+                    }
+                }
+                System.IO.File.AppendAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedBeds.txt", Environment.NewLine + metroTextBox1.Text + Environment.NewLine);
 
-            System.IO.File.AppendAllText(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedBeds.txt", Environment.NewLine + metroTextBox1.Text + Environment.NewLine);
+                //VENTS
+                var liste = new List<string>();
+                using (var file3 = new StreamReader(@"C:\Users\Eliott\source\repos\HealthDesk\HealthDesk\bin\Debug\Equipment\UsedVents.txt"))
 
-            //Updateequip();
+                {
+                    var line3 = string.Empty;
+
+                    while ((line3 = file3.ReadLine()) != null)
+                    {
+                        liste.Add(line3);
+                    }
+                }
+
+                Updateequip();
+            }
 
         }
 
@@ -77,6 +97,13 @@ namespace HealthDesk
             metroTextBox2.Text = excel.ReadCell(0, 9);
             metroTextBox3.Text = excel.ReadCell(0, 10);
             excel.Close();
+        }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            Form9 f9 = new Form9();
+            f9.Show();
+
         }
     }
 }

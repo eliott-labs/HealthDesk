@@ -1,6 +1,6 @@
 ﻿namespace HealthDesk
 {
-    partial class Form7
+    partial class Form9
     {
         /// <summary>
         /// Required designer variable.
@@ -43,9 +43,9 @@
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.Location = new System.Drawing.Point(24, 64);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(71, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(73, 19);
             this.metroLabel1.TabIndex = 0;
-            this.metroLabel1.Text = "Total Beds:";
+            this.metroLabel1.Text = "Total Vents:";
             // 
             // metroLabel2
             // 
@@ -61,9 +61,9 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.Location = new System.Drawing.Point(23, 83);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(73, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(75, 19);
             this.metroLabel3.TabIndex = 2;
-            this.metroLabel3.Text = "Used Beds:";
+            this.metroLabel3.Text = "Used Vents:";
             // 
             // metroLabel4
             // 
@@ -111,7 +111,7 @@
             this.metroTextBox1.Size = new System.Drawing.Size(220, 139);
             this.metroTextBox1.TabIndex = 7;
             // 
-            // Form7
+            // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -124,8 +124,8 @@
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
-            this.Name = "Form7";
-            this.Text = "Beds";
+            this.Name = "Form9";
+            this.Text = "Ventilators";
             this.ResumeLayout(false);
             this.PerformLayout();
 
